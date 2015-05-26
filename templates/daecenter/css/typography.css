@@ -1,0 +1,108 @@
+﻿/* -------------------------------------------------------------
+	Name	           : typography.css
+	Site               : meno.dk website
+	Date	           : June 16th,2011
+	Last Modified date : 
+	
+	Created by Thanh Phong, Pham
+	email : phong.pham@mwc@.vn
+-------------------------------------------------------------- */
+
+/* --------------------------------------------------------------
+
+   typography.css
+   * Sets up some sensible default typography.
+
+-------------------------------------------------------------- */
+
+/* Default font settings.
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+body {
+  font-size:100%;
+  color: #321607;
+  font: normal 14px Calibri, Arial, Helvetica,sans-serif;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {  font-family: Calibri, Arial, Helvetica, sans-serif;  font-weight: 600; color: #2b1608; }
+h1 { font-size: 22px;}
+h2 { font-size: 18px;}
+
+h2, h3, h4 {line-height: 22px;}
+
+/* Text elements
+-------------------------------------------------------------- */
+p           { margin: 0 0 0.7em; line-height: 18px; }
+
+a, a:visited           { color: #cc3325; text-decoration: none; cursor: pointer; outline: none ;}
+a:focus,
+a:hover     { outline: none; color: #d51200; }
+
+blockquote  { margin: 1.5em; color: #fff; font-style: italic; }
+strong,dfn	{ font-weight: bold; }
+em,dfn      { font-style: italic; }
+sup, sub    { line-height: 0; }
+
+abbr,
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 1.5em; font-style: italic; }
+del         { color:#666; }
+
+pre         { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+strong.hilite_txt { color: #05A1E4;}
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+ul, ol      { margin: 0.5em 1em 1em 0; padding-left: 1.5em; line-height: 18px; }
+
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dd          { margin-left: 1.5em;}
+
+/* Tables
+-------------------------------------------------------------- */
+/* 
+	Because of the need for padding on TH and TD, the vertical rhythm 
+	on table cells has to be 27px, instead of the standard 18px or 36px 
+	of other elements. 
+ */ 
+table       { margin-bottom: 5px; width:100%; }
+th          { font-weight: bold; }
+thead th    { background: #c3d9ff; }
+
+tfoot       { font-style: italic; }
+caption     { background: #eee; }
+
+.hidden_txt {	
+	text-indent: -9999px;
+	line-height: 0;
+	font-size: 0;
+}
+.pitalic{
+	font-style:italic;
+}
+.p14{
+	font-size:14px;
+}
+.p13{
+	font-size:13px;
+}
+.p-up{
+	text-transform:uppercase;
+}
+.p12{
+	font-size:12px;
+}
+.p-normal{
+	font-style:normal;
+}
+.p-regular{
+	font-weight:normal;
+}

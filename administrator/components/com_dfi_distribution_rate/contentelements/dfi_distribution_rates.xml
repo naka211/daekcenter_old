@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Dfi_distribution_rate</name>
+  <author>Mr. Ngo Quang Bieu</author>
+  <version>1.0.0</version>
+  <description>Definition for the core Dfi_distribution_rate component</description>
+  <reference>
+  	<table name="dfi_distribution_rates">
+		<field type="referenceid" name="dfi_distribution_rate_id" translate="0">ID</field>
+	<field type="titletext" name="dfi_kobeark_product_id" translate="0">Dfi_kobeark_product_id</field>
+		<field type="titletext" name="dfi_shop_id" translate="0">Dfi_shop_id</field>
+		<field type="titletext" name="rate" translate="0">Rate</field>
+		
+		<!--<filter>c.state >= 0</filter>-->
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <!--<dfi_distribution_rate>dfi_distribution_rate_id</dfi_distribution_rate>-->
+  </translationfilters>  
+</joomfish>

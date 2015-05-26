@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Dfi_campaign</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>April 2010</creationDate>
+	<author>Mr. Ngo Quang Bieu</author>
+	<authorEmail>ngo.bieu@mwc.vn</authorEmail>
+	<authorUrl>http://cinet.22web.net</authorUrl>
+	<copyright>(C) 2009-2010 All rights reserved.</copyright>
+	<license>Debug</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	  <description>
+    <![CDATA[<p>This is Dfi_campaign Manager component for joomla 1.5 (no legacy mode!)
+    <br />This component introduces simple Administration/User interface and render "Dfi_campaign Management" into joomla content.
+    <br />
+    </p>]]></description> 
+	
+	<!-- Site Main File Copy Section-->
+	<installfile>install.dfi_campaign.php</installfile>
+	<uninstallfile>uninstall.dfi_campaign.php</uninstallfile>
+	
+	<!--<install>
+		<queries>
+			<query>				
+			</query>
+		</queries>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<queries>
+			<query>
+			</query>
+		</queries>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>-->
+	
+	<files>
+		<!--<filename>index.html</filename>
+		<filename>dfi_campaign.php</filename>-->
+	</files>
+	 
+	<!-- Site Main Language File Copy Section -->
+	<languages>
+		<!--<language tag="en-GB">en-GB.com_dfi_campaign.ini</language>
+		<language tag="da-DK">da-DK.com_dfi_campaign.ini</language>-->
+	</languages>
+	
+	<!--<media folder="sample_images" destination="../images/dfi_campaign">
+		<folder>samples</folder>	
+    </media>-->
+
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu controller="dfi_campaign" img="../includes/js/ThemeOffice/component.png">Dfi_campaign</menu>
+		<!--<submenu>
+			<menu controller="dfi_campaign">Dfi_campaign Manager</menu>
+			<menu link="option=com_categories&amp;section=com_dfi_campaign">Categories</menu>
+		</submenu>-->
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			 <filename>component_config.xml</filename>
+			 
+			 <filename>index.html</filename>
+			 <filename>dfi_campaign.php</filename>
+			 <filename>controller.php</filename>
+			 
+			 <filename>assets/index.html</filename>
+			 <filename>assets/dfi_campaign.js</filename>
+			 <filename>assets/dfi_campaign.css</filename>
+			 
+			 <filename>elements/index.html</filename>
+			 <filename>elements/customdfi_campaignparams.php</filename>
+			 
+			 <filename>contentelements/index.html</filename>
+			 <filename>contentelements/dfi_campaigns.xml</filename>	
+			 <filename>contentelements/translationDfi_campaignFilter.php</filename>	
+			 
+			 <filename>helpers/index.html</filename>
+			 <filename>helpers/dfi_campaign.php</filename>
+			 
+			 <filename>models/dfi_campaign.php</filename>
+			 <filename>models/dfi_campaigns.php</filename>
+			 <filename>models/index.html</filename>
+			 
+			 <filename>tables/dfi_campaign.php</filename>
+			 <filename>tables/index.html</filename>
+			 
+			 <filename>views/index.html</filename>
+			 
+			 <filename>views/dfi_campaign/index.html</filename>
+			 <filename>views/dfi_campaign/view.html.php</filename>
+			 <filename>views/dfi_campaign/params.xml</filename>
+			 
+			 <filename>views/dfi_campaign/tmpl/index.html</filename>
+			 <filename>views/dfi_campaign/tmpl/form.php</filename>
+			 
+			 <filename>views/dfi_campaigns/index.html</filename>
+			 <filename>views/dfi_campaigns/view.html.php</filename>
+			 
+			 <filename>views/dfi_campaigns/tmpl/index.html</filename>
+			 <filename>views/dfi_campaigns/tmpl/default.php</filename>
+		</files>
+		
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_dfi_campaign.ini</language>
+			<!--<language tag="da-DK">da-DK.com_dfi_campaign.ini</language>-->
+		</languages>
+
+	</administration>
+</install>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>RokQuickCart</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>September 7, 2009</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>@EMAIL@</authorEmail>
+	<authorUrl>@URL@</authorUrl>
+	<copyright>(C) 2009 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		A simple Javascript cart for Paypal or Google Checkout.
+	</description>
+
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+		</sql>
+	</install>
+
+	<!-- Uninstall Database Section -->
+
+	<uninstall>
+		<sql>
+		</sql>
+	</uninstall>
+
+	<!-- Site Main Language File Copy Section -->
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_rokquickcart.ini</language>
+	</languages>
+	
+	<installfile>install/install.rokquickcart.php</installfile>
+	
+	<!-- Site Main File Copy Section -->
+	
+	<media folder="sample_images" destination="../images/rokquickcart">
+		<folder>samples</folder>	
+    </media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="administrator/components/com_rokquickcart">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>install</folder>
+			<folder>libs</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>rokquickcart.php</filename>
+			<filename>component_config.xml</filename>
+		</files>
+		
+		<!-- Administration Language File Copy Section -->
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_rokquickcart.ini</language>
+		</languages>
+	</administration>
+</install>

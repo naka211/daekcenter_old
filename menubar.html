@@ -1,0 +1,60 @@
+﻿<html>
+
+ <head>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+  <meta name="robots" content="noindex,follow"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+   body { font-family:Verdana }
+   img { border: 0 }
+  </style>
+<title>Untitled Document</title>
+<script language="javascript" type="text/javascript">
+var timerid = 0;
+var images = new Array(	"nokian.jpg",
+			"goodyear.jpg",
+			"MICHELIN.BMP",
+			"conti.BMP",
+			"pirelli.jpg",
+			"bridgestone.jpg");
+var countimages = 0;
+function startTime()
+{
+	if(timerid)
+	{
+		timerid = 0;
+	}
+	var tDate = new Date();
+	
+	if(countimages == images.length)
+	{
+		countimages = 0;
+	}
+	if(tDate.getSeconds() % 5 == 0)
+	{
+		document.getElementById("img1").src = images[countimages];
+	}
+	countimages++;
+	
+	timerid = setTimeout("startTime()", 1000);
+}
+</script>
+ </head>
+ <body>
+  <table width="100%" border="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr align="center"><td><a href="dkmap.html" target="mainpage"><img src="dkmapsmall.jpg" alt="" /></a></td></tr>
+   <tr align="center"><td><a href="dkmap.html" target="mainpage">Danmarkskort</a></td></tr>
+   <tr><td>&nbsp;</td></tr>
+   <tr align="center"><td><a href="findos.html" target="mainpage">Afdelinger</a></td></tr>
+   <tr><td>&nbsp;</td></tr>
+   <tr><td>&nbsp;</td></tr>
+   <tr align="center"><td><img src="menulogo ny.jpg" alt="" /><tr><td>
+   <tr><td>&nbsp;</td></tr>
+   <tr align="center"><td><a href="blivforh.html" target="mainpage">Bliv forhandler</a></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td><body onload="startTime();"></td></tr>
+<tr><td><img id="img1" src="nokian.jpg" /></td></tr>
+</table>
+ </body>
+</html>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Dfi_kobreak</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>April 2010</creationDate>
+	<author>Mr. Ngo Quang Bieu</author>
+	<authorEmail>ngo.bieu@mwc.vn</authorEmail>
+	<authorUrl>http://cinet.22web.net</authorUrl>
+	<copyright>(C) 2009-2010 All rights reserved.</copyright>
+	<license>Debug</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	  <description>
+    <![CDATA[<p>This is Dfi_kobreak Manager component for joomla 1.5 (no legacy mode!)
+    <br />This component introduces simple Administration/User interface and render "Dfi_kobreak Management" into joomla content.
+    <br />
+    </p>]]></description> 
+	
+	<!-- Site Main File Copy Section-->
+	<installfile>install.dfi_kobreak.php</installfile>
+	<uninstallfile>uninstall.dfi_kobreak.php</uninstallfile>
+	
+	<!--<install>
+		<queries>
+			<query>				
+			</query>
+		</queries>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<queries>
+			<query>
+			</query>
+		</queries>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>-->
+	
+	<files>
+		<!--<filename>index.html</filename>
+		<filename>dfi_kobreak.php</filename>-->
+	</files>
+	 
+	<!-- Site Main Language File Copy Section -->
+	<languages>
+		<!--<language tag="en-GB">en-GB.com_dfi_kobreak.ini</language>
+		<language tag="da-DK">da-DK.com_dfi_kobreak.ini</language>-->
+	</languages>
+	
+	<!--<media folder="sample_images" destination="../images/dfi_kobreak">
+		<folder>samples</folder>	
+    </media>-->
+
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu controller="dfi_kobreak" img="../includes/js/ThemeOffice/component.png">Dfi_kobreak</menu>
+		<!--<submenu>
+			<menu controller="dfi_kobreak">Dfi_kobreak Manager</menu>
+			<menu link="option=com_categories&amp;section=com_dfi_kobreak">Categories</menu>
+		</submenu>-->
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			 <filename>component_config.xml</filename>
+			 
+			 <filename>index.html</filename>
+			 <filename>dfi_kobreak.php</filename>
+			 <filename>controller.php</filename>
+			 
+			 <filename>assets/index.html</filename>
+			 <filename>assets/dfi_kobreak.js</filename>
+			 <filename>assets/dfi_kobreak.css</filename>
+			 
+			 <filename>elements/index.html</filename>
+			 <filename>elements/customdfi_kobreakparams.php</filename>
+			 
+			 <filename>contentelements/index.html</filename>
+			 <filename>contentelements/dfi_kobreaks.xml</filename>	
+			 <filename>contentelements/translationDfi_kobreakFilter.php</filename>	
+			 
+			 <filename>helpers/index.html</filename>
+			 <filename>helpers/dfi_kobreak.php</filename>
+			 
+			 <filename>models/dfi_kobreak.php</filename>
+			 <filename>models/dfi_kobreaks.php</filename>
+			 <filename>models/index.html</filename>
+			 
+			 <filename>tables/dfi_kobreak.php</filename>
+			 <filename>tables/index.html</filename>
+			 
+			 <filename>views/index.html</filename>
+			 
+			 <filename>views/dfi_kobreak/index.html</filename>
+			 <filename>views/dfi_kobreak/view.html.php</filename>
+			 <filename>views/dfi_kobreak/params.xml</filename>
+			 
+			 <filename>views/dfi_kobreak/tmpl/index.html</filename>
+			 <filename>views/dfi_kobreak/tmpl/form.php</filename>
+			 
+			 <filename>views/dfi_kobreaks/index.html</filename>
+			 <filename>views/dfi_kobreaks/view.html.php</filename>
+			 
+			 <filename>views/dfi_kobreaks/tmpl/index.html</filename>
+			 <filename>views/dfi_kobreaks/tmpl/default.php</filename>
+		</files>
+		
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_dfi_kobreak.ini</language>
+			<!--<language tag="da-DK">da-DK.com_dfi_kobreak.ini</language>-->
+		</languages>
+
+	</administration>
+</install>

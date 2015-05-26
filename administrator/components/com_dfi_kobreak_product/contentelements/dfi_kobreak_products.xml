@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Dfi_kobreak_product</name>
+  <author>Mr. Ngo Quang Bieu</author>
+  <version>1.0.0</version>
+  <description>Definition for the core Dfi_kobreak_product component</description>
+  <reference>
+  	<table name="dfi_kobreak_products">
+		<field type="referenceid" name="dfi_kobreak_product_id" translate="0">ID</field>
+	<field type="titletext" name="dfi_product_id" translate="0">Dfi_product_id</field>
+		<field type="titletext" name="dfi_kobreak_id" translate="0">Dfi_kobreak_id</field>
+		<field type="titletext" name="quantity" translate="0">Quantity</field>
+		
+		<!--<filter>c.state >= 0</filter>-->
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <!--<dfi_kobreak_product>dfi_kobreak_product_id</dfi_kobreak_product>-->
+  </translationfilters>  
+</joomfish>

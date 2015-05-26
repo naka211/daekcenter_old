@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Varedatabase</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>January 2010</creationDate>
+	<author>Mr. Ngo Quang Bieu</author>
+	<authorEmail>ngo.bieu@mwc.vn</authorEmail>
+	<authorUrl>http://cinet.22web.net</authorUrl>
+	<copyright>(C) 2009-2010 All rights reserved.</copyright>
+	<license>Debug</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	  <description>
+    <![CDATA[<p>This is Varedatabase component for joomla 1.5 (no legacy mode!)
+    </p>]]></description> 
+	
+	<!-- Site Main File Copy Section-->
+	<installfile>install.varedatabase.php</installfile>
+	<uninstallfile>uninstall.varedatabase.php</uninstallfile>
+	
+	<!--<install>
+		<queries>
+			<query>				
+			</query>
+		</queries>
+	</install>
+	
+	<uninstall>
+		<queries>
+			<query>
+			</query>
+		</queries>
+	</uninstall>-->
+	
+	<files>
+		<filename>index.html</filename>
+		<filename>varedatabase.php</filename>
+		<filename>controller.php</filename>
+		
+		<filename>models/varedatabase.php</filename>
+		
+		<filename>views/index/view.html.php</filename>
+		<filename>views/index/tmpl/default.php</filename>
+	</files>
+	 
+	<!-- Site Main Language File Copy Section -->
+	<languages>
+		<language tag="en-GB">en-GB.com_varedatabase.ini</language>
+		<language tag="da-DK">da-DK.com_varedatabase.ini</language>
+	</languages>
+
+	<administration>
+
+	</administration>
+</install>

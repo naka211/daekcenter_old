@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+        <name>Dfi_kontakt</name> 
+ 
+    <!-- Name of the Author -->
+        <author>Mr. Ngo Quang Bieu</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>January 2010</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>(C) 2009-2010 All rights reserved.</copyright> 
+ 
+    <!-- License Information -->
+        <license>Debug</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>ngo.bieu@mwc.vn</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>http://cinet.22web.net</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>1.0.0</version> 
+ 
+    <!-- Description of what the module does -->
+        <description><![CDATA[<p>This is Dfi_kontakt module for joomla 1.5 (no legacy mode!)
+    </p>]]></description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_dfi_kontakt">mod_dfi_kontakt.php</filename>
+                <filename>index.html</filename>
+                <filename>helper.php</filename>
+                <filename>tmpl/default.php</filename>
+                <filename>tmpl/index.html</filename>
+        </files>
+ 
+    <languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_dfi_kontakt.ini</language>
+		<language tag="da-DK">da-DK.mod_dfi_kontakt.ini</language>
+    </languages>
+ 
+    <!-- Optional parameters -->
+        <params>
+        <!-- parameter to allow placement of a module class suffix for the module table / xhtml display -->
+                <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+</install>

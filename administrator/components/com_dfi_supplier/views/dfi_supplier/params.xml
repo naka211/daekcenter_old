@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+ 	<params addpath="/administrator/components/com_dfi_supplier/elements">
+  		<param name="item_status" type="text" label="Item Status" description="Item Status Description"/>
+	</params>
+</root>

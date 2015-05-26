@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>  		
+  		<param name="com_component" type="text" default="component_config.xml" label="System Component Config" description="System Component Config Description"/>
+		<param name="com_contact" type="text" default="config.xml" label="Contact Component Config" description="Contact Component Config Description"/>
+		<param name="com_content" type="text" default="config.xml" label="Content Component Config" description="Content Component Config Description"/>
+		<param name="com_media" type="text" default="config.xml" label="Media Component Config" description="Media Component Config Description"/>
+		<param name="com_users" type="text" default="config.xml" label="Users Component Config" description="Users Component Config Description"/>
+		<param name="com_weblinks" type="text" default="config.xml" label="Weblinks Component Config" description="Weblinks Component Config Description"/>
+		<param name="com_newsfeeds" type="text" default="config.xml" label="Newsfeeds Component Config" description="Newsfeeds Component Config Description"/>
+		<param name="com_banners" type="text" default="config.xml" label="Banners  Component Config" description="Banners Component Config Description"/>
+	</params>
+</config>

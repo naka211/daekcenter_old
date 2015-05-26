@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="system">
+	<name>System - Contents Anywhere</name>
+	<description>Modules Anywhere ...place contents anywhere in Joomla!</description>
+	<version>1.0.0</version>
+	<creationDate>December 2009</creationDate>
+	<author>Mr. Ngo Quang Bieu</author>
+	<authorEmail>ngo.bieu@mwv.vn</authorEmail>
+	<authorUrl>http://cinet.22web.net</authorUrl>
+	<copyright>(C) 2009-2010 All rights reserved.</copyright>
+	<license>Debug</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="contentsanywhere">contentsanywhere.php</filename>
+	</files>
+
+</install>

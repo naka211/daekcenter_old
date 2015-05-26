@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+ 	<params addpath="/administrator/components/com_dfi_order/elements">
+  		<param name="item_note" type="text" label="Note" description="Item Note Description"/>
+	</params>
+</root>

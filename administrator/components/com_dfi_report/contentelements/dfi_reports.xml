@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Dfi_report</name>
+  <author>Mr. Ngo Quang Bieu</author>
+  <version>1.0.0</version>
+  <description>Definition for the core Dfi_report component</description>
+  <reference>
+  	<table name="dfi_reports">
+		<field type="referenceid" name="dfi_report_id" translate="0">ID</field>
+	<field type="titletext" name="dfi_shop_id" translate="0">Dfi_shop_id</field>
+		<field type="titletext" name="dfi_product_id" translate="0">Dfi_product_id</field>
+		<field type="titletext" name="quantity" translate="0">Quantity</field>
+		<field type="titletext" name="month" translate="0">Month</field>
+		<field type="titletext" name="year" translate="0">Year</field>
+		
+		<!--<filter>c.state >= 0</filter>-->
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <!--<dfi_report>dfi_report_id</dfi_report>-->
+  </translationfilters>  
+</joomfish>

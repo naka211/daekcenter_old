@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<install type="component" version="1.5.0">
+    <name>pi_admin_user_access</name>
+    <creationDate>juli 2008</creationDate>
+    <author>Carsten Engel</author>
+    <copyright>Copyright 2007-2009 (C) Carsten Engel - Engelweb. All rights reserved.</copyright>
+    <authorEmail></authorEmail>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorUrl>www.pages-and-items.com</authorUrl>
+    <version>2.0.2</version>
+    <description>manages admin-users: page access, itemtype access, item access, sections access, component access, module access, plugin access, workflow, custom admin toolbar, hide Joomla toolbar.
+</description>	    
+    <administration>  
+		<menu task="foo">Admin User Access</menu>      
+		<files>
+			<filename>admin/access_components.php</filename>
+			<filename>admin/access_itemtypes.php</filename>
+			<filename>admin/access_pages.php</filename>
+			<filename>admin/actions.php</filename>
+			<filename>admin/categories.php</filename>			
+			<filename>admin/config.php</filename>
+			<filename>admin/expired.php</filename>
+			<filename>admin/index.html</filename>	
+			<filename>admin/items.php</filename>
+			<filename>admin/modules.php</filename>
+			<filename>admin/plugins.php</filename>			
+			<filename>admin/sections.php</filename>
+			<filename>admin/toolbars.php</filename>
+			<filename>admin/usergroup.php</filename>
+			<filename>admin/usergroups.php</filename>
+			<filename>admin/users.php</filename>
+			<filename>css/index.html</filename>
+			<filename>css/pi_admin_user_access2.css</filename>
+			<filename>css/toolbar.css</filename>
+			<filename>css/toolbar_hide.css</filename>
+			<filename>css/toolbar_hide_j-1-5-x.css</filename>			
+			<filename>css/toolbar_j-1-0-x.css</filename>
+			<filename>css/toolbar_line.css</filename>	
+			<filename>css/toolbar_padding_bottom_j-1-0-x.css</filename>	
+			<filename>css/toolbar_padding_bottom_j-1-5-x.css</filename>						
+			<filename>images/aua_tab_off.gif</filename>
+			<filename>images/aua_tab_off_left.gif</filename>
+			<filename>images/aua_tab_on.gif</filename>
+			<filename>images/aua_tab_on_left.gif</filename>
+			<filename>images/aua_tabs_bg.gif</filename>
+			<filename>images/icon.gif</filename>
+			<filename>images/index.html</filename>
+			<filename>images/no_access.gif</filename>
+			<filename>images/toolbar.gif</filename>	
+			<filename>javascript/index.html</filename>	
+			<filename>javascript/javascript.js</filename>	
+			<filename>javascript/suckerfish_dropdowns.js</filename>	
+			<filename>language/brazilian_portuguese.php</filename>
+			<filename>language/chinese.php</filename>
+			<filename>language/danish.php</filename>
+			<filename>language/dutch.php</filename>	
+			<filename>language/english.php</filename>
+			<filename>language/finnish.php</filename>
+			<filename>language/french.php</filename>
+			<filename>language/german.php</filename>
+			<filename>language/greek.php</filename>			
+			<filename>language/hungarian.php</filename>
+			<filename>language/index.html</filename>
+			<filename>language/italian.php</filename>	
+			<filename>language/persian.php</filename>	
+			<filename>language/romanian.php</filename>
+			<filename>language/slovenian.php</filename>
+			<filename>language/spanish.php</filename>	
+			<filename>language/turkish.php</filename>		
+			<filename>admin.pi_admin_user_access.php</filename>
+			<filename>class.php</filename>				
+			<filename>index.html</filename>					
+			<filename>toolbar.pi_admin_user_access.php</filename>						
+		</files>
+	</administration>	
+	<installfile>install.pi_admin_user_access.php</installfile>
+	<uninstallfile>uninstall.pi_admin_user_access.php</uninstallfile>
+</install>

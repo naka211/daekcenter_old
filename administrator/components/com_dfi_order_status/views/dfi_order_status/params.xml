@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+ 	<params addpath="/administrator/components/com_dfi_order_status/elements">
+  		<!--<param name="test" type="customdfi_order_statusparams" label="Test" description="Test"/>-->
+	</params>
+</root>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <params>
+		<param name="component_status" type="list" default="on" label="Component Status" description="Component Status DESC">
+				<option value="on">On</option>
+				<option value="off">Off</option>
+		</param>
+	</params>
+</config>

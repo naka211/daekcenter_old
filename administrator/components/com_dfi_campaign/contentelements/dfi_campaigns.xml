@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Dfi_campaign</name>
+  <author>Mr. Ngo Quang Bieu</author>
+  <version>1.0.0</version>
+  <description>Definition for the core Dfi_campaign component</description>
+  <reference>
+  	<table name="dfi_campaigns">
+		<field type="referenceid" name="dfi_campaign_id" translate="0">ID</field>
+	<field type="titletext" name="name" translate="0">Name</field>
+		<field type="created_date" name="created" translate="0">Created</field>
+		<field type="modified_date" name="modified" translate="0">Modified</field>
+		<field type="titletext" name="published" translate="0">Published</field>
+		<field type="titletext" name="ordering" translate="0">Ordering</field>
+		<field type="htmltext" name="description" translate="0">Description</field>
+		<field type="titletext" name="published_date" translate="0">Published_date</field>
+		<field type="titletext" name="unpublished_date" translate="0">Unpublished_date</field>
+		
+		<!--<filter>c.state >= 0</filter>-->
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <!--<dfi_campaign>dfi_campaign_id</dfi_campaign>-->
+  </translationfilters>  
+</joomfish>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Dfi_campaign_to_product</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>June 2010</creationDate>
+	<author>Mr. Ngo Quang Bieu</author>
+	<authorEmail>ngo.bieu@mwc.vn</authorEmail>
+	<authorUrl>http://cinet.22web.net</authorUrl>
+	<copyright>(C) 2009-2010 All rights reserved.</copyright>
+	<license>Debug</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	  <description>
+    <![CDATA[<p>This is Dfi_campaign_to_product Manager component for joomla 1.5 (no legacy mode!)
+    <br />This component introduces simple Administration/User interface and render "Dfi_campaign_to_product Management" into joomla content.
+    <br />
+    </p>]]></description> 
+	
+	<!-- Site Main File Copy Section-->
+	<installfile>install.dfi_campaign_to_product.php</installfile>
+	<uninstallfile>uninstall.dfi_campaign_to_product.php</uninstallfile>
+	
+	<!--<install>
+		<queries>
+			<query>				
+			</query>
+		</queries>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<queries>
+			<query>
+			</query>
+		</queries>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>-->
+	
+	<files>
+		<!--<filename>index.html</filename>
+		<filename>dfi_campaign_to_product.php</filename>-->
+	</files>
+	 
+	<!-- Site Main Language File Copy Section -->
+	<languages>
+		<!--<language tag="en-GB">en-GB.com_dfi_campaign_to_product.ini</language>
+		<language tag="da-DK">da-DK.com_dfi_campaign_to_product.ini</language>-->
+	</languages>
+	
+	<!--<media folder="sample_images" destination="../images/dfi_campaign_to_product">
+		<folder>samples</folder>	
+    </media>-->
+
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu controller="dfi_campaign_to_product" img="../includes/js/ThemeOffice/component.png">Dfi_campaign_to_product</menu>
+		<!--<submenu>
+			<menu controller="dfi_campaign_to_product">Dfi_campaign_to_product Manager</menu>
+			<menu link="option=com_categories&amp;section=com_dfi_campaign_to_product">Categories</menu>
+		</submenu>-->
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			 <filename>component_config.xml</filename>
+			 
+			 <filename>index.html</filename>
+			 <filename>dfi_campaign_to_product.php</filename>
+			 <filename>controller.php</filename>
+			 
+			 <filename>assets/index.html</filename>
+			 <filename>assets/dfi_campaign_to_product.js</filename>
+			 <filename>assets/dfi_campaign_to_product.css</filename>
+			 
+			 <filename>elements/index.html</filename>
+			 <filename>elements/customdfi_campaign_to_productparams.php</filename>
+			 
+			 <filename>contentelements/index.html</filename>
+			 <filename>contentelements/dfi_campaign_to_products.xml</filename>	
+			 <filename>contentelements/translationDfi_campaign_to_productFilter.php</filename>	
+			 
+			 <filename>helpers/index.html</filename>
+			 <filename>helpers/dfi_campaign_to_product.php</filename>
+			 <filename>helpers/dfi_campaign_to_product_active_checkbox.php</filename>
+			 
+			 <filename>models/active_checkbox.php</filename>
+			 <filename>models/index.html</filename>
+			 
+			 <filename>tables/dfi_campaign_to_product.php</filename>
+			 <filename>tables/index.html</filename>
+			 
+			 <filename>views/index.html</filename>
+			 
+			 <filename>views/active_checkbox/index.html</filename>
+			 <filename>views/active_checkbox/view.html.php</filename>
+			 
+			 <filename>views/active_checkbox/tmpl/index.html</filename>
+			 <filename>views/active_checkbox/tmpl/default.php</filename>
+		</files>
+		
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_dfi_campaign_to_product.ini</language>
+			<!--<language tag="da-DK">da-DK.com_dfi_campaign_to_product.ini</language>-->
+		</languages>
+
+	</administration>
+</install>

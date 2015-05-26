@@ -1,0 +1,200 @@
+﻿/* -------------------------------------------------------------
+	Name	           : styles.css
+	Site               : dfi website 
+	Date	           : Oct. 27,2011
+	Last Modified date : 
+	
+	Created by Thanh Phong, Pham
+	email : phong.pham@mwc@.vn
+-------------------------------------------------------------- */
+@import url(layout.css);
+
+/* ------------------------------------
+	GENERAL ELEMENTS
+------------------------------------ */
+html {}
+
+body, #sidebar { background: #e0e0e0 url(../img/body-bg.png) repeat-x top;}
+.clearfix:before, .clearfix:after {content: ""; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {}
+.clear {clear: both;}
+.fl {float: left;}
+.fr {float: right;}
+.w280 {width: 280px;}
+.follow-us {position: absolute; bottom: 55px; right: 165px;}
+.follow-us a {background: none !important;}
+.follow-us2 {position: absolute; bottom: 28px; right: 68px;}
+.follow-us2 a {background: none !important;}
+#page { background: #E0E0E0;}
+
+#container {
+}
+
+.top-decor {border-top: 3px solid #cc3325; height: 3px; width: 100%; position: fixed; z-index: 99999;}
+
+/*---Form elements --*/
+
+/*----Links Buttons---*/
+a.more { background: url(../img/next_arrow.png) no-repeat right center; padding-right: 10px;}
+a.back { background: url(../img/prev_arrow.png) no-repeat left 4px; padding-left: 15px; height: 20px; color: #cc3325; text-transform: uppercase; float: left; margin-top: 5px; }
+a.back:hover { text-decoration: underline;}
+
+/*-------------------------Header--------------------------------*/
+#sidebar { position: absolute; left: 0; top: 0; width: 245px; height: 760px; margin: 0; z-index: 9999; }
+	#sidebar .sidebar-inner {background: url(../img/sidebar-bg.png) no-repeat center right; height: 100%;}
+	h1#logo {float: left; width: 245px; height: 112px; margin: 0; padding: 0; background:url(../img/logo-bg.png) repeat-x bottom; }
+	h1#logo a { display:block; text-align:center; margin-top: 22px;}
+
+/*--Left sidebar--*/
+#menu { clear: left; float: left; width: 215px; margin: 15px 0 0 15px; }
+	ul#mainNav { float: left; display: inline; list-style: none; padding: 0; margin: 0; }
+	ul#mainNav li { float: left; display: inline; width: 215px; height: 37px; margin-bottom: 5px; position:relative}
+	ul#mainNav li a, ul#mainNav li.active a{ background:url(../img/sprites/menu-bg.png) no-repeat 0 -37px; display: block; width: 215px; height: 37px; color: #fff; text-shadow: 0 1px 1px #701d13; font-size: 18px; font-weight: bold; line-height: 36px; text-indent: 15px; text-transform: uppercase;}
+	ul#mainNav li a:hover, ul#mainNav li.active a { background-position: 0 0;}
+	ul#mainNav li ul { list-style: none; padding: 0; margin: 0; position: absolute; width: 217px; top: -2px; left: 200px !important; display:none; z-index: 999; background:#fff url(../img/sub-menu-bg.png) repeat-x bottom; border: 2px solid #fff; 
+	-moz-box-shadow:    0px 1px 2px 1px rgba(21,21,50,0.4);
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(21,21,50,0.4);
+    box-shadow:         0px 1px 2px 1px rgba(21,21,50,0.4);	}
+	ul#mainNav li ul li { border: 1px solid #cbcbcb; margin: 0; border-top: none; background: none !important;}
+	ul#mainNav li ul li a, ul#mainNav li.active ul li a {background: none !important; color: #181818; text-shadow: none; font-size: 16px; text-transform: none;}
+	ul#mainNav li ul li a:hover, ul#mainNav li.active ul li a:hover {color: #e03b27;}
+	ul#mainNav li ul li:first-child {border-top: 1px solid #cbcbcb; }
+	
+	ul#mainNav li:hover ul {display: block;}
+	
+#ads { clear:left; float: left; background: url(../img/ads-box-shd.png) no-repeat right center; padding-right: 6px; width: 194px; margin: 10px 0 0 24px;}
+	#ads .ads-inner { background: #fff; border: 1px solid #d8d8d8; width: 194px; padding: 5px 0; overflow:hidden;}
+	#ads p { text-align:center; padding: 6px 0; margin: 0 0 0 15px; float: left; clear: left; height: 48px;}
+	.ie #ads p {margin: 1px 0 0 15px;}
+
+/*--------------Main content--------------
+----Homepage----*/
+#main { clear: both; overflow:hidden; margin-left: 245px; }
+	#contentFrame { overflow: hidden; padding-bottom: 20px; position: relative; background: #ededed;}
+	#contentFrame.w-bg { background: #fff;}
+
+/*Store Banners*/
+#DCMap { background:url(../img/da-map.png) no-repeat; width: 881px; height: 659px; margin-top: 54px;}
+	#DCMap .map-inner { position: relative;}
+	#DCMap a { background:url(../img/sprites/location-bullet.png) no-repeat top right; width: 18px; height: 18px; position: absolute; display: block;}
+	#DCMap a:hover, #DCMap a.active { background-position: 0 -18px;}
+	/*****17.04.13***/
+#DCMap1 { background:url(../img/da-map1.png) no-repeat; width: 698px; height: 532px; margin-top: 70px; position: relative;}
+	#DCMap1 .map-inner { position: relative;}
+	#DCMap1 a { background:url(../img/sprites/location-bullet1.png) no-repeat top right; width: 18px; height: 18px; position: absolute; display: block;}
+	#DCMap1 a:hover, #DCMap a.active { background-position: 0 -18px;}	
+	
+	/********/
+	.map-tips{
+		display:none;
+		position:absolute;
+		z-index:3000;
+		/*background:url(../img/tip-balloon.png) no-repeat bottom left;*/
+		width: 330px;
+		/*height: 174px;*/
+		height: 132px;
+		color: #fff;
+		background: red
+	}
+	.map-tips img { float: left; max-width: 108px; margin: 10px;}
+	.map-tips .info { width: 190px; margin-top: 6px; float: left; overflow:hidden;}
+	.map-tips h3 {color: #fff; font-size: 18px; text-shadow: 0 1px 1px #701d13; margin-bottom: 10px;}
+	.map-tips a { color: #fff; text-decoration: underline;}
+
+#DCLocations { width: 455px; height: 255px; position:absolute; top: 110px; right: 25px;z-index: 1000;}
+	#DCLocations h1 { font-size: 34px; text-align: right;}
+	#DCLocations ul { list-style: none; padding: 30px 0 0 0; margin: 0; overflow:hidden;}
+	ul.department-loc-list li { float: right; clear: right; margin-bottom: 5px; background: url(../img/sprites/store-loc-item.png) no-repeat 0 0; height: 26px; padding-left: 14px;}
+	ul.department-loc-list li a {background-color: #df3928; display:block; padding: 0 10px; height: 26px; line-height: 24px; color: #fff; text-transform: uppercase; font-weight: bold;text-shadow: 0 1px 1px #701d13; font-size: 16px;}
+	ul.department-loc-list li:hover, ul.department-loc-list li.active { background-position: 0 -26px;}
+	ul.department-loc-list li:hover a, ul.department-loc-list li.active a { background: url(../img/item-bg-rp.png) repeat-x top;}
+	ul.department-loc-list li.last { margin-top: 43px;}
+	ul.department-loc-list li.last a { background: #df3928 url(../img/next-arrow.png); background-repeat: no-repeat; background-position: 90% center; padding-right: 26px; }
+	ul.department-loc-list li.last:hover a { background: url(../img/location-item-last.png) no-repeat right; }
+	
+/*17.04.13*******/
+#DCLocations h3 {text-align: right; font-size: 16px; padding-bottom: 10px;}
+#DCLocations .f-search {text-align: right;}
+.f-search form input { width: 174px; height: 22px; line-height: 22px; border: 1px solid #aeaeae; padding: 0 5px; float: right; }
+.f-search form a.bntGo {background: url(../img/bntGo.png) no-repeat; width: 38px; height: 24px; text-indent: 9999px; display: block; float: right; margin-left: 3px;}
+.f-search form a.bntGo:hover {background-position: 0 -24px;}
+/***************/
+	
+.departments-list { padding-top: 15px; overflow:hidden;}
+	.departments-list .department-item { background:url(../img/department-item-bg.png) no-repeat bottom left; padding: 15px 0 20px 0; overflow:hidden;}
+	.departments-list .department-item.last { background: none;}
+	.departments-list h2, .departments-list h3 { text-transform: uppercase;}
+	.departments-list .info { min-height: 105px;}
+	.departments-list .info2 { min-height: 105px;}
+	.departments-list a.firma-kort-btn, .opening-hours, .opening-hours2,  .see-price-btn {background: url(../img/sprites/department-bg.png) no-repeat;}
+	.departments-list a.firma-kort-btn { clear: both; display:block; width: 229px; height: 38px; line-height: 38px; font-weight: bold; text-transform: uppercase; font-size: 16px; background-position: 0 -159px; text-indent: 42px; color: #444; text-shadow: 0 1px 1px #fff;  }
+	.departments-list a.firma-kort-btn:hover { background-position: 0 -199px;}
+	.opening-hours, .opening-hours2 { background-position: 0 0; height: 159px; width: 237px; position:relative;}
+	.opening-hours .inner, .opening-hours2 .inner { margin: 45px 20px 0 20px; width: 195px;}
+	.opening-hours p, .opening-hours2 p  { margin: 0 0 3px 0;}
+	.opening-hours a.see-price-btn, .opening-hours2 a.see-price-btn { background-position: 0 -239px; display:block; width: 194px; height: 28px; line-height: 28px; text-transform: uppercase; font-size: 16px; color: #fff; text-shadow: 0 1px 1px #701d13; text-indent: 15px; font-weight: bold; margin-top: 8px; position:absolute; bottom: 15px; left: 20px; }
+	.opening-hours span.hour, .opening-hours2 span.hour { float: right;}
+	
+.dept-title-list ul {list-style: none; padding: 25px 0 15px 0; margin: 0; overflow:hidden;}
+	.dept-title-list ul li { float: left; display:inline; padding-right: 20px;}
+	.dept-title-list ul li a { font-size: 18px; font-weight: bold;}
+	.dept-title-list ul li a:hover { color: #e03b27;}
+	
+ul.brands-list { list-style: none; padding: 0 0 10px 0; margin: 0; overflow:hidden;}
+	ul.brands-list li { float:left; display:inline-block; width: 162px; height: 48px; margin: 8px 18px 10px 0; border: 1px solid #ccc; padding: 3px;}
+	ul.brands-list li:hover { border: 1px solid #000;}
+/*-----------------------Footer --------------------------------*/
+#footer {overflow: hidden; padding: 15px 20px 20px 20px; background: #fff url(../img/footer-bg.png) no-repeat top center; color: #6a6a6a; text-align:center; }
+#footer a {color: #787878;}
+#footer a:hover {color: #cc3325;}
+
+/*----------//---------------*/
+h1.head-tt { text-transform: uppercase; background:url(../img/hr-line.png) no-repeat 50% center; }
+h1.head-tt span { background: #ededed; padding-right: 4px; }
+.highlite { color: #cb2c1d; padding-right: 6px;}
+
+.article ul { list-style: none; overflow:hidden; padding: 8px 0 12px 0; margin: 0;}
+.article ul li { background:url(../img/r-bullet.png) no-repeat left center; padding-left: 12px; line-height: 20px;}
+
+a.back { background:url(../img/min-prev-arrow.png) no-repeat left center; padding-left: 10px; display: block;}
+
+#toTop a {
+	display: block;
+	display: none;
+	z-index: 9999; 
+	opacity: .8;
+	position: fixed;
+	top: 100%;
+	margin-top: -60px; /* = height + preferred bottom margin */
+	right: 20px;
+	margin-left: -160px;
+	width: 93px;
+	line-height: 35px;
+	height: 37px;
+	background:url(../img/totop-btn.png) no-repeat;
+	text-indent: -9999px;
+}
+.info a{font-size:12px;}
+
+#w-contentFrame {background: #fff; width: 793px; margin: 0;}
+.f-arial {font-family: Arial,Helvetica,sans-serif; }
+.f19 {font-size: 19px;}
+.cc3325 {color: #cc3325; }
+
+.opening-hours2 {background-position: 0 0; height: 117px; position: relative; width: 237px; padding-top: 41px; }
+.opening-hours2 .inner {margin: 5px 20px 0; width: 195px; /*padding-top: 40px;*/}
+.opening-hours2 a.see-price-btn {background-position: 0 -239px; bottom: 15px; color: #FFFFFF; display: block; font-size: 16px; font-weight: bold; height: 28px; left: 20px; line-height: 28px; margin-top: 8px; position: absolute; text-indent: 15px; text-shadow: 0 1px 1px #701D13; text-transform: uppercase; width: 194px;}
+.opening-hours2 span.hour { float: right;}
+
+a.bntFollow {background: url(../img/iconFollowus.png) no-repeat 0 0 !important; width: 158px !important; height: 45px !important; text-indent: -9999px; display: block !important;}
+a.bntFollow:hover {background-position: 0 -45px !important;}
+a.bntFollow2 {background: url(../img/iconFollowus.png) no-repeat 0 0 !important; width: 158px !important; height: 45px !important; text-indent: -9999px; display: block !important;}
+a.bntFollow2:hover {background-position: 0 -45px !important;}
+
+.footer2 {background: none;}
+#footer2 {overflow: hidden; padding: 15px 20px 20px 20px;  background: url(../img/footer-bg.png) no-repeat top center; color: #6a6a6a; text-align:center; }
+#footer2 a {color: #787878;}
+#footer2 a:hover {color: #cc3325;}
+
+img {max-width: 100%;}

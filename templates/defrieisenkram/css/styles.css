@@ -1,0 +1,329 @@
+﻿/* -------------------------------------------------------------
+	Name	           : styles.css
+	Site               : dfi website 
+	Date	           : Oct. 27,2011
+	Last Modified date : 
+	
+	Created by Thanh Phong, Pham
+	email : phong.pham@mwc@.vn
+-------------------------------------------------------------- */
+@import url(layout.css);
+
+/* ------------------------------------
+	GENERAL ELEMENTS
+------------------------------------ */
+html {}
+
+body { background: #302d28  url(../img/bg.jpg) repeat-x top;}
+
+
+#page {
+}
+
+#container {
+}
+
+/*---Form elements --*/
+
+/*----Links Buttons---*/
+a.more { background: url(../img/next_arrow.png) no-repeat right center; padding-right: 10px;}
+a.link-btn:hover, #pagination a:hover { color: #101010;}
+a.back { background: url(../img/prev_arrow.png) no-repeat left 4px; padding-left: 15px; height: 20px; color: #fff; text-shadow: 0px 1px 1px #000; text-transform: uppercase; float: left; margin-top: 5px; }
+a.back:hover { color: #00ccff;}
+a.btn {opacity: 0.85; display: block; filter: alpha(opacity=85) }
+a.btn:hover {opacity: 1; filter: alpha(opacity=100)}
+
+/*-------------------------Header--------------------------------*/
+#header { position: relative; width: 100%; height: 99px; margin: 0; overflow: hidden; background: #302d28 url(../img/header-bg.jpg) no-repeat center top; border-bottom: 1px solid #fff;}
+	#header .header-ctn { margin: auto; overflow: hidden;}
+	#header h1#logo {float: left; display: inline; width: 220px; height: 84px; margin-top: 9px; padding: 0; }
+
+/*--Main Menu--*/
+#menu { float: right; width: 588px; margin-top: 62px;}
+#header ul.menu { float: left; display: inline; list-style: none; padding: 0; margin: 0;}
+#header ul.menu li { float: left; display: inline; width: 116px; height: 37px; margin-left: 1px;}
+#header ul.menu li a, #header ul.menu li.active a{ background:url(../img/sprites/menu-bg.png) no-repeat 0 0; display: block; width: 116px; height: 37px; color: #35393b; text-shadow: 0 1px 1px #fff; font-size: 14px; font-weight: bold; line-height: 36px; text-align: center;}
+#header ul.menu li a:hover, #header ul.menu li.active a { background-position: -117px 0;}
+
+/*--------------Main content--------------
+----Homepage----*/
+#main { clear: both; overflow:hidden; border-top: 5px solid #cdcdcd; border-bottom: 5px solid #cdcdcd; background: #fff; }
+	#main #content { overflow: hidden; margin: auto; padding-bottom: 20px; position: relative;}
+
+#sidebar { }
+
+/*Store Banners*/
+#DFIStoresMap { background:url(../img/dfi-map.png) no-repeat; width: 278px; height: 237px; position: absolute; top: 8px; left: 0;}
+	#DFIStoresMap .map-inner { position: relative;}
+	#DFIStoresMap a { background:url(../img/sprites/location-bullet.png) no-repeat top right; width: 11px; height: 11px; position: absolute; display: block;}
+	#DFIStoresMap a:hover, #DFIStoresMap a.active { background-position: top left;}
+	
+/* unitip css */
+#unitip {
+	position: absolute;
+	z-index: 1000;
+	top: -1000px;
+	color: #fff;
+	font: normal normal 1.1em/15px Arial, Helvetica, sans-serif;
+	display: none;
+}
+
+	#unitippoint, #unitipmid, #unitipcap {
+		position: relative;
+		top: 0px; 
+		left: 0px;
+		width: 145px;
+		display: block;
+		font-size: 11px; font-weight: bold;
+	}
+	
+	#unitippoint { 
+		background: url(../img/tip-point.png) no-repeat; 
+		height: 19px; 
+		overflow: hidden; 
+	}
+	
+	#unitipmid { 
+		background: url(../img/tip-mid.png) repeat; 
+		width: 115px;
+		height: auto; 
+		padding: 5px 15px;
+	}
+	
+	#unitipcap { 
+		background: url(../img/tip-cap.png) no-repeat; 
+		height: 7px; 
+		overflow: hidden; 
+	}
+
+.store-location { padding: 17px 0 5px; overflow: hidden;}
+	.store-location .store-ctn { background: #312e29; margin-left: 216px; overflow: hidden;}
+	.store-location .store-photo { width: 380px; height: 214px; border: 1px solid #312e29; border-left: none; background: #312e29;}
+	.store-location .store-photo img { max-width: 380px; max-height: 214px;}
+	.store-location .store-info {background: #312e29; width: 313px; height: 206px; padding: 10px 20px 0 20px;}
+	.store-location h2 { color: #00d0f9; border-bottom: 1px solid #4c4a45; padding-bottom: 3px; text-transform: uppercase;}
+	.store-location h4 { text-transform: uppercase; margin: 0;}
+	.store-location ul, .store-location ul li{ list-style: none; margin: 0; padding: 0; overflow: hidden;}
+	.store-location ul li span { float: right; padding-left: 8px;}
+	.store-location .info-ctn { overflow: hidden; padding-top: 10px; color: #f5f5f5;}
+	.store-location .contact-info { line-height: 18px;}
+	
+/*Ads banner*/
+#tilbudAds { width: 950px; height: 190px; margin-top: 15px;}
+#tilbudAds a:hover {opacity: 0.85; display: block; filter: alpha(opacity=85) }
+
+.miscTilbud { margin-top: 20px; overflow: hidden;}
+	.miscTilbud .block-col { width: 228px; height: 189px; float: left; margin-left: 12px;}
+	.miscTilbud .fremtid.block-col { margin-left: 0; margin-right: 1px; overflow: hidden;}
+	.miscTilbud .fremtid.block-col a { display: block; float: left; width: 228px; height: 189px; background: url(../img/fremtid.jpg) no-repeat; }
+	.miscTilbud .fremtid.block-col a span { display: block; width: 140px; margin: 142px 0 0 15px; font-size: 14px; font-weight: bold; text-transform: uppercase;  }
+	
+	.miscTilbud .newsletter { background: url(../img/newsletter-box.png) no-repeat;}
+	.miscTilbud .newsletter h3 { font-size: 14px; font-weight: bold; text-transform: uppercase;  color: #007eb9; margin: 10px 15px; border-bottom: 1px dotted #c7c7c7; }
+	.miscTilbud .newsletter p { padding: 0 15px;}
+	.miscTilbud .newsletter form { padding: 0 15px;}
+	.miscTilbud .newsletter input.input-text {	-moz-border-radius: 15px; border-radius: 15px;  border: 1px solid #b7b7b7; height: 20px; line-height: 24px; padding: 2px 4px 3px 8px ; width: 180px;}
+	.miscTilbud .newsletter .btn-ctn { padding-top: 5px;}
+
+    .box_sendnews_txt{	-moz-border-radius: 15px; border-radius: 15px;  border: 1px solid #b7b7b7; height: 20px; line-height: 24px; padding: 2px 4px 3px 8px ; width: 142px;}
+
+/*-----------------------Footer --------------------------------*/
+#footer {overflow: hidden; padding: 15px 0 20px 0; border-top: 1px solid #fff; color: #f5f5f5;}
+#footer .footer-inner {margin-left: auto; margin-right: auto; width: 950px; text-align: center;}
+#footer a.power { color: #f5f5f5;}
+#footer a.power:hover {color:#00ccff;}
+
+
+.w300{
+	width:300px;
+}
+.txt-pop, .txa-pop{
+	width:275px;
+	height:25px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px #929292 solid;
+	padding-left:10px;
+	float:left;
+	margin-bottom:10px;
+	font-size:12px;
+}
+.w126{
+	width:126px !important;
+}
+.mr10{
+	margin-right:10px;
+}
+.mr30{
+	margin-right:30px;
+}
+
+.p-bold{
+	font-weight:bold;
+}
+.txa-pop{
+	height:171px;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:12px  !important;
+	text-align:left;
+	padding-top:10px;
+}
+.h100{
+	height:100px;
+}
+.btn{
+	display:block;
+	opacity:1.0;
+}
+.btn:hover{
+	opacity:0.8;
+}
+.btn-pop{
+	 margin-left: 206px;
+	 margin-top:20px;
+	
+}
+.left-content{
+	float:left;
+}
+.boder-left-menu,.boder-right-content{
+	border:2px #e1e1e1 solid;
+	overflow:hidden;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 216px;
+	margin-top:17px;
+	margin-bottom:17px;
+}
+.left-menu,.right-content{
+	width:200px;
+	float:left;
+	background:url('../img/bg-gradient.jpg') bottom repeat-x;
+	overflow:hidden;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:2px #fff solid;
+	padding-left:12px;
+	padding-top: 5px;
+}
+.boder-right-content{
+	width:706px;
+	float:left;
+	margin-left:17px;
+}
+.right-content{
+	padding-right: 12px;
+    padding-top: 8px;
+    width: 678px;
+	background:url('../img/bg-gradient.jpg') bottom repeat-x;
+	padding-bottom:15px;
+}
+.menuleft{
+	
+}
+.menuleft ul.menu li{
+	list-style:url('../img/bullet_normal.jpg');
+	margin-top:10px;
+}
+.menuleft ul.menu li.active{
+	list-style:url('../img/bullet_active.jpg');
+}
+.menuleft ul.menu li a{
+	font-size:12px;
+	font-weight:bold;
+	color:#505050;
+}
+.menuleft ul.menu li a:hover,.menuleft ul.menu li.active a{
+	color:#007eb9;
+	
+}
+.title-content{
+	color: #007EB9;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:1px silver dotted;
+	margin-bottom:10px;
+}
+
+.img-cnt-left{
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	border:1px #b4b4b4 solid;
+	background:white;
+	
+}
+.img-cnt-left img{
+	border:3px #fff solid;
+	border-bottom:none;
+}
+.img-cnt-right{
+	float:right;
+	margin-left:10px;
+	margin-bottom:10px;
+	border:1px #b4b4b4 solid;
+	background:white;
+	
+}
+.img-cnt-right img{
+	border:3px #fff solid;
+	border-bottom:none;
+}
+.txt-cnt1{
+	width:505px;
+	float:left;
+}
+.txt-cnt p,.txt-cnt1 p{
+	margin-bottom:10px;
+	text-align:justify;
+}
+.mt20{
+	margin-top:20px;
+}
+.mt10{
+	margin-top:10px;
+}
+.mb20{
+	margin-bottom:20px;
+}
+.mb10{
+	margin-bottom:10px;
+}
+.post-news{
+	width:675px;
+	border-bottom:1px gray dotted;
+	overflow:hidden;
+	margin-top:10px;
+}
+.link-blue{
+	color:#007EB9 !important;
+}
+.link-blue:hover{
+	text-decoration:underline;
+}.gray{
+	color:gray;
+}
+.btn-right{
+	position:fixed;
+	right: -1px;
+	top:200px;
+}
+.img-cnt-left{
+	position:relative;
+}
+.img-cnt-left span{
+	background:url('../img/viewflip_06.png') no-repeat;
+	position:absolute;
+	top:40px;
+	display:none;
+	z-index:9999;
+	width:140px;
+	height:56px;
+	left:30px;
+}
+a.img-cnt-left:hover span{
+	display:block;
+}

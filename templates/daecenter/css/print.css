@@ -1,0 +1,54 @@
+/* ----------------------------------------------------------- */
+
+body {
+  line-height: 16pt;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  color:#000;
+  background: none;
+  font-size: 11pt;
+  padding: 0 10pt;
+}
+
+
+/* Layout
+-------------------------------------------------------------- */
+/* Text
+-------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-family: Georgia, "Times New Roman", Times, serif; }
+
+h1 { font-size: 16pt; font-weight: normal;}
+
+a, a img { border:none; }
+
+blockquote {
+  margin:1.5em;
+  padding:1em;
+  font-style:italic;
+  font-size:.9em;
+}
+
+
+a:link:after, a:visited:after {
+  content: " (" attr(href) ")";
+  font-size: 90%;
+}
+
+#main { width: 860px; padding-top: 5pt;}
+
+#main .modelPrintItem{ padding-top: 5pt;}
+
+#modelProfil { border: 1px solid #000; border-right: none; border-left: none; padding: 15px 0; overflow: hidden; margin: 5px 0;}
+
+#profilePhotos { float: left; width: 305px; display: inline;}
+#profilePhotos img { max-width: 300px;}
+
+#profileInfo .info-ctn { overflow: hidden;}
+ul.info-list { list-style: none; padding: 0; margin: 0; float: right; width: 555px;}
+ul.info-list li { float: left; display: block; width: 255px; border-bottom: 1px dotted #000; margin-left: 22px; margin-top: 1px; line-height: 17pt;}
+ul.info-list li span.label { margin-right: 5px;}
+ul.info-list li span.data { font-style: italic; font-weight: bold;}
+
+#modelProfil .info-desc { overflow: hidden; padding-top: 10px;}
+#modelProfil .info-desc .left { float:left; width: 49%;}
+#modelProfil .info-desc .right { float:right; width: 49%;}

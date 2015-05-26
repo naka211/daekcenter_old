@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Dfi_order</name>
+  <author>Mr. Ngo Quang Bieu</author>
+  <version>1.0.0</version>
+  <description>Definition for the core Dfi_order component</description>
+  <reference>
+  	<table name="dfi_orders">
+		<field type="referenceid" name="dfi_order_id" translate="0">ID</field>
+	<field type="titletext" name="dfi_shop_id" translate="0">Dfi_shop_id</field>
+		<field type="titletext" name="dfi_kobreak_id" translate="0">Dfi_kobreak_id</field>
+		<field type="htmltext" name="note" translate="0">Note</field>
+		<field type="created_date" name="created" translate="0">Created</field>
+		<field type="modified_date" name="modified" translate="0">Modified</field>
+		<field type="titletext" name="sent" translate="0">Sent</field>
+		<field type="titletext" name="dfi_order_status_id" translate="0">Dfi_order_status_id</field>
+		
+		<!--<filter>c.state >= 0</filter>-->
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <!--<dfi_order>dfi_order_id</dfi_order>-->
+  </translationfilters>  
+</joomfish>

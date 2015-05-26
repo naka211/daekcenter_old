@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<slideshow width = "905" height = "210" 
+		startWith = "1"
+		backgroundColor = "ffffff" 
+		backgroundTransparency = "0"
+		randomSlideshow = "true"
+		loop = "true">
+
+	<item>
+		<path>medias/img/banners/1.jpg</path>v
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+	
+	<item>
+		<path>medias/img/banners/2.jpg</path>
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+	
+	<item>
+		<path>medias/img/banners/3.jpg</path>
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+	<item>
+		<path>medias/img/banners/4.jpg</path>
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+	<item>
+		<path>medias/img/banners/5.jpg</path>
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+	<item>
+		<path>medias/img/banners/6.jpg</path>
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+	<item>
+		<path>medias/img/banners/7.jpg</path>
+		<transitionTime>2</transitionTime>
+		<slideShowTime>6</slideShowTime>
+	</item>
+		
+</slideshow>
